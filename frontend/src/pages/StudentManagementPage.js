@@ -18,10 +18,6 @@ function StudentManagementPage() {
     const [selectedSection, setSelectedSection] = useState("");
     const [availableSections, setAvailableSections] = useState([]);
 
-    useEffect(() => {
-        fetchStudents();
-    }, [fetchStudents]);
-
     const fetchStudents = async () => {
         try {
             setLoading(true);
@@ -47,6 +43,10 @@ function StudentManagementPage() {
             setLoading(false);
         }
     };
+
+    useEffect(() => {
+        fetchStudents();
+    }, [fetchStudents]);
 
     const handleDelete = async (id) => {
         if (!window.confirm("Are you sure you want to delete this student?")) return;

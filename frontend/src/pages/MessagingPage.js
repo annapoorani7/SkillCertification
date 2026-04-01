@@ -15,14 +15,6 @@ function MessagingPage() {
   const [selectedUser, setSelectedUser] = useState(null);
   const messagesEndRef = useRef(null);
 
-  useEffect(() => {
-    fetchUsers();
-  }, [fetchUsers]);
-
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
-
   const fetchUsers = async () => {
     try {
       let endpoint = '';
@@ -57,6 +49,14 @@ function MessagingPage() {
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    fetchUsers();
+  }, [fetchUsers]);
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
 
   const handleSendMessage = () => {
     if (!newMessage.trim() || !selectedUser) return;
