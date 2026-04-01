@@ -20,7 +20,7 @@ function StudentManagementPage() {
 
     useEffect(() => {
         fetchStudents();
-    }, []);
+    }, [fetchStudents]);
 
     const fetchStudents = async () => {
         try {

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { motion } from "framer-motion";
-import api from "../utils/api";
 import SCHOOL from "../utils/schoolInfo";
 import { useAuth } from "../context/AuthContext";
 import "../App.css";

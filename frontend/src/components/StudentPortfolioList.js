@@ -19,7 +19,7 @@ function StudentPortfolioList({ studentAddress = null, isAuthenticated = false }
     const [certificates, setCertificates] = useState([]);
     const [loading, setLoading] = useState(false);
     const [selectedCert, setSelectedCert] = useState(null);
-    const [filter, setFilter] = useState("all"); // all, active, expired, revoked
+    const [filter] = useState("all"); // all, active, expired, revoked
 
     const fetchCertificates = useCallback(async () => {
         setLoading(true);

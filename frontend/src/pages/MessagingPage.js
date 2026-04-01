@@ -17,7 +17,7 @@ function MessagingPage() {
 
   useEffect(() => {
     fetchUsers();
-  }, []);
+  }, [fetchUsers]);
 
   useEffect(() => {
     scrollToBottom();
