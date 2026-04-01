@@ -16,6 +16,10 @@ const auth = require("./middleware/auth");
 const http = require("http");
 const socketIo = require("socket.io");
 
+app.get("/", (req, res) => {
+  res.send("SkillCert Backend Running ✅");
+});
+
 // new modular controllers
 const UserController = require("./src/controllers/user.controller");
 const userController = new UserController();
