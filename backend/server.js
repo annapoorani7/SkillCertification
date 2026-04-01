@@ -7,7 +7,7 @@ const path = require("path");
 const dns = require("dns");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
-const { pgPool } = require("./config/database");
+// const { pgPool } = require("./config/database");
 const bcrypt = require("bcryptjs");
 const User = require("./models/User");
 const Certificate = require("./models/Certificate");
@@ -49,14 +49,14 @@ mongoose
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
-// Test postgres connection
-pgPool.query('SELECT NOW()', [], (err, res) => {
-  if (err) {
-    console.error('Postgres connection error:', err);
-  } else {
-    console.log('Postgres connected at', res.rows[0].now);
-  }
-});
+// // Test postgres connection
+// pgPool.query('SELECT NOW()', [], (err, res) => {
+//   if (err) {
+//     console.error('Postgres connection error:', err);
+//   } else {
+//     console.log('Postgres connected at', res.rows[0].now);
+//   }
+// });
 
 // Socket.io connection handling
 io.on('connection', (socket) => {
@@ -254,8 +254,9 @@ app.get("/api/certificates/all", auth, async (req, res) => {
 
 app.get("/api/organizations", auth, async (req, res) => {
   try {
-    const result = await pgPool.query('SELECT * FROM organizations');
-    res.json(result.rows);
+    // const result = await pgPool.query('SELECT * FROM organizations');
+    // res.json(result.rows);
+    res.json({ organizations: [] }); // Placeholder
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

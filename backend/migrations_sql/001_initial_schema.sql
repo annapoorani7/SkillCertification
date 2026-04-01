@@ -1,3 +1,4 @@
+/*
 -- Initial schema generated from architecture document
 
 -- Organizations table
@@ -194,3 +195,4 @@ CREATE INDEX IF NOT EXISTS idx_certificates_student ON certificates(student_id);
 CREATE INDEX IF NOT EXISTS idx_certificates_organization ON certificates(organization_id);
 CREATE INDEX IF NOT EXISTS idx_certificates_status ON certificates(status);
 CREATE INDEX IF NOT EXISTS idx_certificates_blockchain_hash ON certificates(transaction_hash);
+*/
