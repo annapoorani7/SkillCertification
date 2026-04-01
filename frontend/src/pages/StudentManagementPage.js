@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import api from "../utils/api";
 import { toast } from "react-toastify";
 import "../App.css";
@@ -18,7 +18,7 @@ function StudentManagementPage() {
     const [selectedSection, setSelectedSection] = useState("");
     const [availableSections, setAvailableSections] = useState([]);
 
-    const fetchStudents = async () => {
+    const fetchStudents = useCallback(async () => {
         try {
             setLoading(true);
             const [usersRes, parentsRes] = await Promise.all([
@@ -42,7 +42,7 @@ function StudentManagementPage() {
         } finally {
             setLoading(false);
         }
-    };
+    }, [selectedClass]);
 
     useEffect(() => {
         fetchStudents();

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { useSocket } from '../context/SocketContext';
 import { useAuth } from '../context/AuthContext';
@@ -15,7 +15,7 @@ function MessagingPage() {
   const [selectedUser, setSelectedUser] = useState(null);
   const messagesEndRef = useRef(null);
 
-  const fetchUsers = async () => {
+  const fetchUsers = useCallback(async () => {
     try {
       let endpoint = '';
       if (user.role === 'admin') {
@@ -44,7 +44,7 @@ function MessagingPage() {
       console.error('Fetch users error:', err);
       toast.error('Failed to load users');
     }
-  };
+  }, [user]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
