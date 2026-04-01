@@ -16,9 +16,9 @@ const auth = require("./middleware/auth");
 const http = require("http");
 const socketIo = require("socket.io");
 
-app.get("/", (req, res) => {
-  res.send("SkillCert Backend Running ✅");
-});
+// // app.get("/", (req, res) => {
+// //   res.send("SkillCert Backend Running ✅");
+// // });
 
 // new modular controllers
 const UserController = require("./src/controllers/user.controller");
@@ -37,6 +37,10 @@ const io = socketIo(server, {
 });
 app.use(bodyParser.json());
 app.use(cors()); // ✅ enable cross-origin requests
+
+app.get("/", (req, res) => {
+  res.send("SkillCert Backend Running ✅");
+});
 
 // Force IPv4 for localhost resolving (fixes ::1 ECONNREFUSED)
 if (dns.setDefaultResultOrder) {
