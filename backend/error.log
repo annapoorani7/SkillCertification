@@ -1,0 +1,122 @@
+[2026-02-14T13:15:50.218Z] Web3 initialization error: request to http://localhost:8545/ failed, reason: connect ECONNREFUSED ::1:8545
+FetchError: request to http://localhost:8545/ failed, reason: connect ECONNREFUSED ::1:8545
+    at ClientRequest.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:517:28)
+    at Socket.socketErrorListener (node:_http_client:501:9)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+---
+[2026-02-14T13:16:40.145Z] Error in /issue: request to http://localhost:8545/ failed, reason: connect ECONNREFUSED ::1:8545
+FetchError: request to http://localhost:8545/ failed, reason: connect ECONNREFUSED ::1:8545
+    at ClientRequest.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:517:28)
+    at Socket.socketErrorListener (node:_http_client:501:9)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+---
+[2026-02-14T13:16:49.820Z] Error in /issue: request to http://localhost:8545/ failed, reason: connect ECONNREFUSED ::1:8545
+FetchError: request to http://localhost:8545/ failed, reason: connect ECONNREFUSED ::1:8545
+    at ClientRequest.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:517:28)
+    at Socket.socketErrorListener (node:_http_client:501:9)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+---
+[2026-02-16T04:37:14.373Z] Error in /issue: Returned error: sender account not recognized
+InvalidResponseError: Returned error: sender account not recognized
+    at Web3RequestManager._processJsonRpcResponse (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\web3-core\lib\commonjs\web3_request_manager.js:281:23)
+    at Web3RequestManager.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\web3-core\lib\commonjs\web3_request_manager.js:167:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\web3-core\lib\commonjs\web3_request_manager.js:21:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+---
+[2026-02-16T04:37:40.469Z] Error in /issue: Returned error: sender account not recognized
+InvalidResponseError: Returned error: sender account not recognized
+    at Web3RequestManager._processJsonRpcResponse (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\web3-core\lib\commonjs\web3_request_manager.js:281:23)
+    at Web3RequestManager.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\web3-core\lib\commonjs\web3_request_manager.js:167:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\web3-core\lib\commonjs\web3_request_manager.js:21:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+---
+[2026-02-16T05:32:30.905Z] Error in /issue: Returned error: sender account not recognized
+InvalidResponseError: Returned error: sender account not recognized
+    at Web3RequestManager._processJsonRpcResponse (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\web3-core\lib\commonjs\web3_request_manager.js:281:23)
+    at Web3RequestManager.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\web3-core\lib\commonjs\web3_request_manager.js:167:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\web3-core\lib\commonjs\web3_request_manager.js:21:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+---
+[2026-02-16T05:33:10.798Z] Error in /issue: Returned error: sender account not recognized
+InvalidResponseError: Returned error: sender account not recognized
+    at Web3RequestManager._processJsonRpcResponse (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\web3-core\lib\commonjs\web3_request_manager.js:281:23)
+    at Web3RequestManager.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\web3-core\lib\commonjs\web3_request_manager.js:167:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\web3-core\lib\commonjs\web3_request_manager.js:21:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+---
+[2026-02-23T03:37:09.141Z] Error in /issue: Cannot read properties of undefined (reading 'CertificateIssued')
+TypeError: Cannot read properties of undefined (reading 'CertificateIssued')
+    at C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\server.js:317:33
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+---
+[2026-02-23T03:48:49.116Z] Error in /issue: Cannot read properties of undefined (reading 'CertificateIssued')
+TypeError: Cannot read properties of undefined (reading 'CertificateIssued')
+    at C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\server.js:317:33
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+---
+[2026-03-05T05:08:21.653Z] Web3 initialization error: request to http://127.0.0.1:8545/ failed, reason: connect ECONNREFUSED 127.0.0.1:8545
+FetchError: request to http://127.0.0.1:8545/ failed, reason: connect ECONNREFUSED 127.0.0.1:8545
+    at ClientRequest.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:517:28)
+    at Socket.socketErrorListener (node:_http_client:501:9)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+---
+[2026-03-05T05:09:13.317Z] Web3 initialization error: request to http://127.0.0.1:8545/ failed, reason: connect ECONNREFUSED 127.0.0.1:8545
+FetchError: request to http://127.0.0.1:8545/ failed, reason: connect ECONNREFUSED 127.0.0.1:8545
+    at ClientRequest.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:517:28)
+    at Socket.socketErrorListener (node:_http_client:501:9)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+---
+[2026-03-05T05:11:08.659Z] Web3 initialization error: request to http://127.0.0.1:8545/ failed, reason: connect ECONNREFUSED 127.0.0.1:8545
+FetchError: request to http://127.0.0.1:8545/ failed, reason: connect ECONNREFUSED 127.0.0.1:8545
+    at ClientRequest.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:517:28)
+    at Socket.socketErrorListener (node:_http_client:501:9)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+---
+[2026-03-05T12:03:53.740Z] Web3 initialization error: request to http://127.0.0.1:8545/ failed, reason: connect ECONNREFUSED 127.0.0.1:8545
+FetchError: request to http://127.0.0.1:8545/ failed, reason: connect ECONNREFUSED 127.0.0.1:8545
+    at ClientRequest.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:517:28)
+    at Socket.socketErrorListener (node:_http_client:501:9)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+---
+[2026-03-05T13:20:38.177Z] Web3 initialization error: request to http://127.0.0.1:8545/ failed, reason: connect ECONNREFUSED 127.0.0.1:8545
+FetchError: request to http://127.0.0.1:8545/ failed, reason: connect ECONNREFUSED 127.0.0.1:8545
+    at ClientRequest.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:517:28)
+    at Socket.socketErrorListener (node:_http_client:501:9)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+---

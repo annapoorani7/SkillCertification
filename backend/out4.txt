@@ -1,0 +1,31 @@
+[dotenv@17.3.1] injecting env (4) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[dotenv@17.3.1] injecting env (0) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }
+[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+BlockchainService initialized
+Contract address: 0x06775b1D279c578E6d338939D9E8204117fe1522
+(node:5772) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5772) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+Server running on http://localhost:5000
+Connected to MongoDB
+Web3 initialization error FetchError: request to http://127.0.0.1:8545/ failed, reason: connect ECONNREFUSED 127.0.0.1:8545
+    at ClientRequest.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:517:28)
+    at Socket.socketErrorListener (node:_http_client:501:9)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED'
+}
+Postgres connection error: Error: connect ECONNREFUSED 127.0.0.1:5432
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+  errno: -4078,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 5432
+}

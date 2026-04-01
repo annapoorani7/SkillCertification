@@ -1,0 +1,9 @@
+{
+  "network": "ganache",
+  "chainId": "1772632217628",
+  "skillCertificateAddress": "0x06775b1D279c578E6d338939D9E8204117fe1522",
+  "deployer": "0xA27fd037895c7ad2a0d929f6A6dD65A10Db68A8e",
+  "deploymentTimestamp": "2026-03-05T04:33:57.021Z",
+  "issuanceFee": "0.01 ETH",
+  "owner": "0xA27fd037895c7ad2a0d929f6A6dD65A10Db68A8e"
+}

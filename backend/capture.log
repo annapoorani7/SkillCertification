@@ -1,0 +1,15 @@
+C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\src\repositories\certificate.repository.js:7
+const { v4: uuidv4 } = require('uuid');
+                       ^
+
+Error [ERR_REQUIRE_ESM]: require() of ES Module C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\node_modules\uuid\dist-node\index.js from C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\src\repositories\certificate.repository.js not supported.
+Instead change the require of index.js in C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\src\repositories\certificate.repository.js to a dynamic import() which is available in all CommonJS modules.
+    at Object.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\src\repositories\certificate.repository.js:7:24)
+    at Object.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\src\services\certificate.service.js:7:31)
+    at Object.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\src\controllers\certificate.controller.js:6:28)
+    at Object.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\src\routes\certificates.js:8:31)
+    at Object.<anonymous> (C:\Users\RAVI KUMAR SAMPATH\skill-certification\backend\server.js:24:27) {
+  code: 'ERR_REQUIRE_ESM'
+}
+
+Node.js v18.20.8
