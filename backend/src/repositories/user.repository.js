@@ -1,18 +1,23 @@
-// src/repositories/user.repository.js
+﻿// src/repositories/user.repository.js
 // const db = require('../../db');
+// const User = require('../../models/User');
 
 // class UserRepository {
 //     async create(user) {
-//         const result = await db.query(
-//             `INSERT INTO users (id, email, first_name, last_name, role) VALUES ($1,$2,$3,$4,$5) RETURNING *`,
-//             [user.id, user.email, user.first_name, user.last_name, user.role]
-//         );
-//         return result.rows[0];
+//         // MongoDB equivalent:
+//         // return await User.create({
+//         //     id: user.id,
+//         //     username: user.username,
+//         //     email: user.email,
+//         //     firstName: user.first_name,
+//         //     lastName: user.last_name,
+//         //     role: user.role
+//         // });
 //     }
 
 //     async findAll() {
-//         const result = await db.query('SELECT * FROM users');
-//         return result.rows;
+//         // MongoDB equivalent:
+//         // return await User.find({}).lean();
 //     }
 // }
 

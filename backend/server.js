@@ -1,13 +1,13 @@
-require("dotenv").config();
+const path = require("path");
+require("dotenv").config({ path: path.resolve(__dirname, ".env") });
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const fs = require("fs");
-const path = require("path");
 const dns = require("dns");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
-// const { pgPool } = require("./config/database");
+// const { mongoose } = require("./config/database");
 const bcrypt = require("bcryptjs");
 const User = require("./models/User");
 const Certificate = require("./models/Certificate");
@@ -48,19 +48,29 @@ if (dns.setDefaultResultOrder) {
 }
 
 // Connect to MongoDB
+const mongoUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/skill_cert';
+console.log('Connecting to MongoDB at:', mongoUri);
 mongoose
-  .connect(process.env.MONGODB_URI)
-  .then(() => console.log("Connected to MongoDB"))
-  .catch((err) => console.error("MongoDB connection error:", err));
+  .connect(mongoUri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("Connected to MongoDB");
+    startServer();
+  })
+  .catch((err) => {
+    console.error("MongoDB connection error:", err);
+    process.exit(1);
+  });
 
-// // Test postgres connection
-// pgPool.query('SELECT NOW()', [], (err, res) => {
-//   if (err) {
-//     console.error('Postgres connection error:', err);
-//   } else {
-//     console.log('Postgres connected at', res.rows[0].now);
-//   }
-// });
+mongoose.connection.once('open', () => {
+  console.log('MongoDB connected');
+});
+
+mongoose.connection.on('error', (err) => {
+  console.error('MongoDB connection error event:', err);
+});
 
 // Socket.io connection handling
 io.on('connection', (socket) => {
@@ -258,8 +268,8 @@ app.get("/api/certificates/all", auth, async (req, res) => {
 
 app.get("/api/organizations", auth, async (req, res) => {
   try {
-    // const result = await pgPool.query('SELECT * FROM organizations');
-    // res.json(result.rows);
+    // const organizations = await Organization.find({}).lean();
+    // res.json(organizations);
     res.json({ organizations: [] }); // Placeholder
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -732,6 +742,8 @@ app.post("/api/store-fcm-token", auth, async (req, res) => {
 console.log("ENV:", process.env);
 
 const PORT = process.env.PORT || 5000;
-server.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+function startServer() {
+  server.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+  });
+}
